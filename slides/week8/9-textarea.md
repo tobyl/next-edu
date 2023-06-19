@@ -15,12 +15,12 @@ While we could technically increase the size of a text input, there is actually 
 <div>
 
 ~~~html
-<textarea rows="6" placeholder="Enter some long form text here"></textarea>
+<textarea rows="6" placeholder="Enter some text here"></textarea>
 ~~~
 
 This results in:
 
-<textarea rows="6" placeholder="Enter some long form text here"></textarea>
+<textarea rows="6" placeholder="Enter some text here"></textarea>
 
 Note that in most modern operating systems, the textarea is resizable.
 

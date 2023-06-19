@@ -26,8 +26,8 @@ const Week = async ({ params }) => {
 
   return (
     <main>
-      {slides.map(s =>
-        <Single slide={s} /> 
+      {slides.map((s, i) =>
+        <Single key={i} slide={s} /> 
       )}
     </main>
   )
