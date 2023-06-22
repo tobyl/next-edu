@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600;700&family=Raleway:ital,wght@0,300;1,300&display=swap');
 
+
 :root {
   --secondary: hsl(287 42% 30%);
   --primary: hsl(219 39% 35%);
@@ -61,29 +62,6 @@ small {
   font-size: 1rem;
 }
 
-/* ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-ul li {
-  padding: 0.5rem 0;
-} */
-
-/* ul li:after {
-  content: '';
-  display: block;
-  height: 1px;
-  background: #e1e1e1;
-  margin-top: 0.5rem;
-  width: 70%;
-}
-
-ul li:last-child:after {
-  background: none;
-} */
-
 p > code {
   font-weight: bold;
   background: #f1f1f1;
@@ -101,6 +79,14 @@ main > div {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 5vw;
+}
+
+.panels > div {
+  min-width: 300px;
+}
+
+.panels pre {
+  overflow-x: scroll;
 }
 
 .panels div > p:first-child {

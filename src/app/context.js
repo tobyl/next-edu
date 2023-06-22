@@ -4,7 +4,7 @@ import { createContext, useContext, useState } from "react"
 
 const AppContext = createContext({})
 
-export const AppContextProvider = ({ children }) => {
+export const AppContextProvider = async ({ children }) => {
     
     const [menuOpen, setMenuOpen] = useState(false)
     const [weeks, setWeeks] = useState([])
