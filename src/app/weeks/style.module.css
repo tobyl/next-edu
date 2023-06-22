@@ -1,0 +1,34 @@
+.weeks {
+  display: grid;
+  place-content: center;
+}
+
+.weekList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #c1c1c1;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 3px 3px 8px rgba(0 0 0 / 0.1);
+}
+
+.weekList li {
+  border-bottom: 1px solid #c1c1c1;
+}
+
+.weekList li:last-child {
+  border-bottom: none;
+}
+
+.weekList li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  background: #eff3f7;
+  transition: background 0.3s ease-in-out;
+}
+
+.weekList li a:hover {
+  background: #e9eef3;
+}
