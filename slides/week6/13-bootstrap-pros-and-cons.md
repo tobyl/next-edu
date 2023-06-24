@@ -1,5 +1,4 @@
 ---
-order: 13
 title: Bootstrap Pros and Cons
 ---
 

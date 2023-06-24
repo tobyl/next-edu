@@ -1,5 +1,4 @@
 ---
-order: 16
 title: CSS Resets and micro-frameworks
 ---
 

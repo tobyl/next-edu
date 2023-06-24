@@ -1,5 +1,4 @@
 ---
-order: 11
 title: Linking labels to their elements
 ---
 

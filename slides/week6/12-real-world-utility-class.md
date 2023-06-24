@@ -1,5 +1,4 @@
 ---
-order: 12
 title: A real-world example of a utility class
 ---
 

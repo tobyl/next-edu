@@ -11,17 +11,18 @@ const getSlides = async id => {
 
   const slides = files.map((file, index) => {
     const f = fs.readFileSync(path.resolve(dir, file), 'utf8')
+
     const md = matter(f)
     md.data.slug = slugify(md.data.title, { lower: true, strict: true })
     return md
-  }).sort((a, b) => a.data.order - b.data.order)
+  })
 
   return slides
 
 }
 
 const Week = async ({ params }) => {
-  
+
   const slides = await getSlides(params.id)
 
   return (

@@ -1,5 +1,4 @@
 ---
-order: 22
 title: A more complex example
 ---
 

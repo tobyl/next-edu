@@ -8,24 +8,24 @@ import styles from './slide.module.css'
 
 const Single = ({ slide }) => {
 
-  console.log(slide.data)
-
   return (
     <section id={slide.data.slug} className={styles.slide}>
-      {slide.data.order === 1 ? (
+      {slide.data.intro ? (
         <Intro>
-          <div className={styles.slideContent}>
+          <div className={`${styles.slideContent} ${styles.introSlide}`}>
             <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeHighlight, rehypeRaw]}>
               {slide.content}
             </ReactMarkdown>
           </div>
         </Intro>
       ) : (
-        <div className={styles.slideContent}>
-          <h2 className="gradient">{slide.data.title}</h2>
-          <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeHighlight, rehypeRaw]}>
-              {slide.content}
-          </ReactMarkdown>
+        <div className={styles.simpleBg}>
+          <div className={styles.slideContent}>
+            <h2 className="gradient"><span>{slide.data.title}</span> {slide.data.emoji}</h2>
+            <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeHighlight, rehypeRaw]}>
+                {slide.content}
+            </ReactMarkdown>
+          </div>
         </div>
       )}
     </section>

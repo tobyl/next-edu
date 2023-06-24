@@ -1,10 +1,10 @@
 'use client'
 
-import { createContext, useContext, useState } from "react"
+import { createContext, useContext, useState } from 'react'
 
 const AppContext = createContext({})
 
-export const AppContextProvider = async ({ children }) => {
+export const AppContextProvider = ({ children }) => {
     
     const [menuOpen, setMenuOpen] = useState(false)
     const [weeks, setWeeks] = useState([])

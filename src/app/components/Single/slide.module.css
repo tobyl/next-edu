@@ -4,10 +4,9 @@
   place-content: center;
   scroll-snap-align: start;
   height: 100vh;
-  background: #e1e1e1;
 }
 
-.slide:first-child .slideContent {
+.introSlide {
   display: grid;
   place-content: center;
   text-align: center;
@@ -25,6 +24,24 @@
   display: none;
 }
 
+.simpleBg {
+  display: grid;
+  place-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+section:nth-child(odd) .simpleBg {
+  background: #f1f1f1;
+}
+
+section:nth-child(even) .simpleBg {
+  background: #e1e1e1;
+}
+
 .slideContent {
   position: relative;
   background: #fff;
@@ -35,6 +52,10 @@
   box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
   z-index: 1;
+}
+
+.slideContent > p > img {
+  max-width: 75%;
 }
 
 .slide:nth-child(odd) {

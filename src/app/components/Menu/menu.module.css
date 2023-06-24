@@ -4,6 +4,7 @@
   left: -30vw;
   bottom: 0;
   width: 30vw;
+  padding: 1.5rem;
   background: #fff;
   box-shadow: 0 0 2rem rgba(0, 0, 0, 0.15);
   border-right: 1px solid rgb(150, 150, 150);
@@ -17,6 +18,25 @@
 }
 
 .menu ul {
-  padding: 1rem;
+  list-style: none;
+  padding: 0;
   font-size: 1.1rem;
 }
+
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  appearance: none;
+  border: 1px solid var(--primary);
+  padding: 0.5rem;
+  border-radius: 1.5rem;
+}
+
+.close svg {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: var(--primary);
+}
+

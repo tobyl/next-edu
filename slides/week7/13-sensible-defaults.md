@@ -1,5 +1,4 @@
 ---
-order: 13
 title: Sensible defaults
 ---
 
