@@ -9,7 +9,7 @@ We create our own HTML, with the audio clip included inside. As you can see, thi
 
 The JavaScript is quite simple - we are manually tracking whether the audio is playing or not, and calling `audio.play()` or `audio.pause()` accordingly.
 
-The built-in browser APIs for manipulating media via JavaScript have become extremely powerful. For example, we are eable to see how much of a media clip has buffered in JavaScript.
+The built-in browser APIs for manipulating media via JavaScript have become extremely powerful. For example, we are able to see how much of a media clip has buffered in JavaScript.
 
 </div>
 <div>
