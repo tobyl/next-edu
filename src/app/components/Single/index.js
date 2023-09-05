@@ -20,7 +20,7 @@ const Single = ({ slide }) => {
         </Intro>
       ) : (
         <div className={styles.slideContent}>
-          <h2 className="gradient"><span>{slide.data.title}</span> {slide.data.emoji}</h2>
+          <h2 className={slide.data.centerTitle ? 'gradient centered' : 'gradient'}><span>{slide.data.title}</span> {slide.data.emoji}</h2>
           <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeHighlight, rehypeRaw]}>
             {slide.content}
           </ReactMarkdown>
