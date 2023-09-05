@@ -12,20 +12,18 @@ const Single = ({ slide }) => {
     <section id={slide.data.slug} className={styles.slide}>
       {slide.data.intro ? (
         <Intro>
-          <div className={`${styles.slideContent} ${styles.introSlide}`}>
+          <div className={styles.introSlide}>
             <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeHighlight, rehypeRaw]}>
               {slide.content}
             </ReactMarkdown>
           </div>
         </Intro>
       ) : (
-        <div className={styles.simpleBg}>
-          <div className={styles.slideContent}>
-            <h2 className="gradient"><span>{slide.data.title}</span> {slide.data.emoji}</h2>
-            <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeHighlight, rehypeRaw]}>
-                {slide.content}
-            </ReactMarkdown>
-          </div>
+        <div className={styles.slideContent}>
+          <h2 className="gradient"><span>{slide.data.title}</span> {slide.data.emoji}</h2>
+          <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeHighlight, rehypeRaw]}>
+            {slide.content}
+          </ReactMarkdown>
         </div>
       )}
     </section>
