@@ -164,3 +164,7 @@ code.language-css span.hljs-attribute {
   border-radius: 100px;
   padding: 0.5rem 1rem;
 }
+
+.centered {
+  text-align: center;
+}
