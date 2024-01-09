@@ -1,5 +1,11 @@
 .home {
-  display: grid;
-  place-content: center;
-  text-align: center;
+  /* display: grid;
+  place-content: center;*/
+  text-align: center; 
+  padding-top: 3rem;
+}
+
+.home p {
+  max-width: 70ch;
+  margin: 0 auto 5rem auto;
 }

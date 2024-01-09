@@ -1,10 +1,52 @@
-.slide {
+section.slide {
   position: relative;
   display: grid;
   place-content: center;
   scroll-snap-align: start;
   height: 100vh;
 }
+
+section.slide:nth-child(odd),
+section.slide:nth-child(even) {
+  background-image: url('../../assets/img/grey-bokeh.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+section.slide:nth-child(odd) {
+  background-color: #00C3A1;
+}
+
+section.slide:nth-child(even) {
+  background-color: #009EB5;
+}
+
+section.slide:has(.introSlide) {
+  background-color: transparent;
+  background-image: none;
+}
+
+.slideContent {
+  background: rgb(255 255 255 / 0.75);
+  width: 90vw;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+}
+
+.introSlide {
+  background: rgb(255 255 255 / 0.75);
+  padding: 2rem 4rem;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 3px 3px 10px rgb(0 0 0 / 0.25);
+}
+
+.slideContent h2 {
+  margin: 0 0 1rem 0;
+}
+
+/*
 
 .introSlide {
   display: grid;
@@ -97,4 +139,4 @@ section:nth-child(even) .simpleBg {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border-left: none;
-}
+} */
