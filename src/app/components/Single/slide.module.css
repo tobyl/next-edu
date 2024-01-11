@@ -42,6 +42,10 @@ section.slide:has(.introSlide) {
   box-shadow: 3px 3px 10px rgb(0 0 0 / 0.25);
 }
 
+.introSlide svg {
+  width: 70vw;
+}
+
 .slideContent h2 {
   margin: 0 0 1rem 0;
 }

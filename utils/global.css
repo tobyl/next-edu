@@ -39,12 +39,11 @@ h2,
 h3,
 h4 {
   font-family: 'Montserrat Alternates', sans-serif;
-  color: #444;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
 }
 
 b,
@@ -53,7 +52,7 @@ strong {
 }
 
 a {
-  color: #0c6cda;
+  color: #009EB5;
 }
 
 img {
@@ -147,4 +146,49 @@ code.language-css span.hljs-attribute {
 .lead {
   font-size: 1.6rem;
   font-weight: 500;
+}
+
+/* btns */
+
+.btn {
+  appearance: none;
+  display: inline;
+  background: #0075AC;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn.pill {
+  border-radius: 100px;
+  padding: 0.5rem 1rem;
+}
+
+.centered {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border: 1px solid #333;
+  border-collapse: collapse;
+  font-size: 1.35rem;
+  margin-bottom: 2rem;
+}
+
+table th {
+  font-weight: 600;
+  border: 1px solid #333;
+  text-align: left;
+  padding: 5px;
+}
+
+table td {
+  border: 1px solid #333;
+  padding: 5px;
+}
+
+table p {
+  margin: 0;
 }
