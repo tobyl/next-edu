@@ -192,3 +192,12 @@ table td {
 table p {
   margin: 0;
 }
+
+h2:has(+ img.img-only) {
+  display: none;
+}
+
+img.img-only {
+  display: block;
+  margin: 0 auto;
+}
