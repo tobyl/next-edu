@@ -15,7 +15,6 @@ The selector is the line of CSS we write before the curly braces - the target el
 <div>
 
 ```css
-
 /*
  Targets the h2 element that is a child of
  the header, which is a child of #sidebar

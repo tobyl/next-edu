@@ -13,7 +13,6 @@ While there is no hard limit to the complexity we can achieve with media queries
 <div>
 
 ```css
-
 header {
     height: 200px;
 }
@@ -26,7 +25,6 @@ header {
     }
 
 }
-
 ```
 
 </div>

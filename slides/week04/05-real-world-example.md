@@ -14,6 +14,7 @@ A great example of the power of media queries is grid layouts. Note how CSS Grid
 
 ```css
 .product-grid {
+    display: grid;
     grid-template-columns: 1fr;
     
     @media (min-width: 600px) {
@@ -25,6 +26,8 @@ A great example of the power of media queries is grid layouts. Note how CSS Grid
     }
 }
 ```
+
+Also note how in this case, 
 
 </div>
 </div>
