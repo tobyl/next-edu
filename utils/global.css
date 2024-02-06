@@ -201,3 +201,10 @@ img.img-only {
   display: block;
   margin: 0 auto;
 }
+
+img.lg-img {
+  min-height: 550px;
+  float: left;
+  margin-right: 30px;
+  border: 1px solid #999;
+}
